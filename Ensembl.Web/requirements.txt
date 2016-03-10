@@ -1,1 +1,1 @@
-django
+bottle<1
