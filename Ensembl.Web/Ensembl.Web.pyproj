@@ -18,8 +18,9 @@
     <PythonWsgiHandler>{StartupModule}.wsgi_app()</PythonWsgiHandler>
     <Name>Ensembl.Web</Name>
     <RootNamespace>Ensembl.Web</RootNamespace>
-    <InterpreterId>{a8d0842d-d883-43d5-a1cc-78635687a586}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterId>{ef00017f-e96d-4506-ae05-cace6a1ee101}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
+    <NameOfLastUsedPublishProfile>Ensembl - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -41,6 +42,7 @@
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Ensembl - Web Deploy.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
@@ -71,6 +73,28 @@
     <Content Include="views\layout.tpl" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env3.4.x86\">
+      <Id>{ef00017f-e96d-4506-ae05-cace6a1ee101}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env3.4.x86 (Python 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+    <Interpreter Include="env3.4\">
+      <Id>{8984576f-61b9-4dd5-82ce-e55b3974fa21}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env3.4 (Python 64-bit 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
     <Interpreter Include="env\">
       <Id>{a8d0842d-d883-43d5-a1cc-78635687a586}</Id>
       <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
