@@ -66,6 +66,7 @@
     <Content Include="static\scripts\respond.js" />
     <Content Include="static\scripts\respond.min.js" />
     <Content Include="static\scripts\_references.js" />
+    <Content Include="static\web.config" />
     <Content Include="views\gene.tpl" />
     <Content Include="views\ping.tpl" />
     <Content Include="views\contact.tpl" />
